@@ -1,0 +1,13 @@
+.picture{
+    border: solid 2px #0091bd;
+    border-radius: 20px;
+}
+
+.picture:hover{
+    background-color: #444444;
+}
+
+.zdjecie{
+    border: none;
+    border-radius: 15px;
+}

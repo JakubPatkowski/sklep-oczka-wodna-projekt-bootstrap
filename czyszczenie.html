@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit = no">
+    <title>GreenPond</title>
+    <meta name="description" content="Oczka wodne">
+    <meta name="keywords" content="oczka wodne,sklep,czyszczenie">
+    <meta name="author" content="Jakub Patkowski">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- BootStrap-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Główny arkusz styli -->
+    <link rel="stylesheet" href="css/uslugi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- JQuery -->
+    
+
+</head>
+<body>
+    <div class="container-fluid p-0"> <!-- fluid -z zajmij cale dostepne miejsce, p-0 - padding 0 -->
+        <header>
+            <nav class="navbar navbar-dark navbar-expand-md col-md-12 ">  <!-- navbar-expand - rozszerz się od medium , navbar-expand-md - wyświetlaj rozwinięte menu przy szerokościach medium lub wiekszych-->
+                <div class="col-12 col-md-7">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="d-inline-block align-bottom" width="197" height="60" alt=""><h1 class="d-inline-block">Green<p class="d-inline-block" style="color: #00b3df;">Pond</p></h1></a> <!-- d-inline-block align-bottom - wyrównanie do dolnej krawędzi, d-inline-block - wyświetlaj jako blok -->
+                </div>
+                <div class="col-12 col-md-5 ms-auto"> <!-- menu rozwijanego, ms-auto - dodanie marginesów po lewej stronie -->
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="#mainmenu" aria-expanded="false" aria-label="rozwin nawigacje"> <!-- data-bs-toggle="collapse" - rozwijanie sie menu, data-bs-target="#mainmenu" - element o id=mainmenu ma się rozwijać, atrybuty aria wykorzystywane do ułatwiania dostępu do stron dla osób z niepełnosprawnościami-->
+                        <span class="navbar-toggler-icon"></span> <!-- element span przechowujący ikonkę rozwijanego menu w wersji mobilnej -->
+                    </button>  
+                    <div class="collapse navbar-collapse col-12 col-sm-12 col-md-8" id="mainmenu"> <!-- element menu który ma się rozwijać w widoku moblinym -->
+                        <ul class="navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Główna</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" id="submenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Usługi</a>
+                                <ul class="dropdown-menu" aria-labelledby="submenu">
+                                    <li><a class="dropdown-item align-right active" href="czyszczenie.html">Czyszczenie oczka</a></li>
+                                    <li><a class="dropdown-item align-right" href="budowa.html">Budowa oczek</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sklep.html">Sklep</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <div class="row container-fluid ml-1 mr-1 mt-3 mb-3">
+            <aside class="col-md-2 ms-3 me-3 d-none d-md-block">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sem dolor, sollicitudin 
+                    ut condimentum gravida, rutrum in metus.Quisque vitae blandit ligula. Vivamus mauris 
+                    nulla, faucibus nec sem at, dapibus consectetur ligula. Donec sagittis, orci non 
+                    condimentum imperdiet, dolor purus dictum lacus, id tincidunt nulla tortor mollis ligula.Maecenas
+            </aside>
+            <main class="col-sm-12 col-md-9 p-4 ms-3 me-3">
+                <div class="row">
+                    <div class="d-inline-block col-sm-12 col-md-6">
+                        <p>
+                            <h2>Nasza oferta</h2>
+                            Nasza firma oferuje kompleksową usługę pielęgnacji oczek wodnych, dbając o zachowanie
+                            ich piękna i zdrowego ekosystemu. Nasze doświadczenie i wiedza pozwoliły nam opracować
+                            skuteczne metody pielęgnacji, które gwarantują utrzymanie optymalnych warunków w Twoim
+                            oczku wodnym. Nasi specjaliści dołożą wszelkich starań, aby Twoje oczko wodne było zdrowe,
+                            estetyczne i stanowiło piękny element Twojego otoczenia.
+                            Oto lista zawierająca główne elementy naszej usługi pielęgnacyjnej:
+                        </p>
+                    </div>
+                    <div class="d-inline-block col-sm-12 col-md-6 img-flex" style="overflow: hidden;">
+                        <img src="images/pracownicy.jpg" class="d-block" alt="...">
+                    </div> 
+                </div>
+                <div class="row">
+                    <h2>Zapewniamy: </h2>
+                    <ul class="list-display list-checkmarks">
+                        <li>Czyszczenie i oczyszczanie: Przeprowadzamy czyszczenie oczek wodnych, 
+                            usuwając zanieczyszczenia, osady, glony i inne substancje, które mogą wpływać na jakość wody i estetykę oczka.</li>
+                        <li>Pielęgnacja roślin: Zapewniamy odpowiednie pielęgnowanie roślin w oczku wodnym,
+                            włączając w to przycinanie, nawożenie i kontrolę rozwoju roślin. Dbamy o to, aby rośliny były zdrowe,
+                            pięknie prezentowały się i zachowywały równowagę ekosystemu.</li>
+                        <li>Monitorowanie parametrów wody: sprawdzamy i monitorujemy parametry wody, takie jak pH, poziom tlenu,
+                            azotanów, fosforanów itp., aby zapewnić optymalne warunki dla flory i fauny w oczku wodnym.</li>
+                        <li>Kontrola i usuwanie szkodników: Przeprowadzamy inspekcje w celu wykrywania i eliminacji szkodników,
+                            które mogą zagrażać zdrowiu oczka wodnego. Jeśli zostaną zidentyfikowane szkodniki, podejmiemy odpowiednie działania,
+                            aby je kontrolować i wyeliminować.</li>
+                        <li>Konserwacja urządzeń i filtrów: Sprawdzamy i konserwujemy urządzenia i filtry używane w oczku wodnym, takie jak pompy,
+                             filtry UV, aeratory itp., aby zapewnić ich prawidłowe funkcjonowanie i wydajność.</li>
+                        <li>Doradztwo i wsparcie: Nasz zespół jest gotowy udzielić Ci fachowego doradztwa i wsparcia w zakresie pielęgnacji oczek wodnych.
+                            Odpowiemy na Twoje pytania, udzielimy wskazówek dotyczących utrzymania optymalnego stanu oczka i pomożemy rozwiązać wszelkie problemy,
+                            na jakie możesz napotkać.</li>
+                      </ul>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 ms-0 me-0">
+                        <div id="mapka" style="background-color: #222222; width: 100%; height: 100%; min-height: 300px;">
+                            <!-- tu będzie mapa -->
+                        </div>
+                    </div>
+                    <div class="zarezerwuj col-sm-12 col-lg-6">
+                        <p><h4>Sprawdź czy jesteś w lokalizacji którą obsługujemy (do 100km od miasta Lublin)</h4></p>
+                        
+                        <div class="col-12 text-center" id="lokalizuj"><p><button class="sprawdz container-fluid"  onclick="getLocation()">Sprawdź</button></p></div>
+                        <div id="wynik">
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="row container-fluid p-0 m-0 ">
+            <footer style="font-size: 15px; color: white; text-align: center; padding-top:15px; padding-bottom: 15px;">
+                Jakub Patkowski
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false" ></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/geolokalizacja.js"></script>
+</body>
+</html>

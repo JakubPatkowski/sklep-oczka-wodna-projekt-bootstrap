@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit = no">
+    <title>GreenPond</title>
+    <meta name="description" content="Oczka wodne">
+    <meta name="keywords" content="oczka wodne,sklep,czyszczenie">
+    <meta name="author" content="Jakub Patkowski">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- BootStrap-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Główny arkusz styli -->
+    <link rel="stylesheet" href="css/galeria.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- JQuery -->
+    
+
+</head>
+<body>
+    <div class="container-fluid p-0"> <!-- fluid -z zajmij cale dostepne miejsce, p-0 - padding 0 -->
+        <header>
+            <nav class="navbar navbar-dark navbar-expand-md col-md-12">  <!-- navbar-expand - rozszerz się od medium , navbar-expand-md - wyświetlaj rozwinięte menu przy szerokościach medium lub wiekszych-->
+                <div class="col-12 col-md-7">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="d-inline-block align-bottom" width="197" height="60" alt=""><h1 class="d-inline-block">Green<p class="d-inline-block" style="color: #00b3df;">Pond</p></h1></a> <!-- d-inline-block align-bottom - wyrównanie do dolnej krawędzi, d-inline-block - wyświetlaj jako blok -->
+                </div>
+                <div class="col-12 col-md-5 ms-auto"> <!-- menu rozwijanego, ms-auto - dodanie marginesów po lewej stronie -->
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="#mainmenu" aria-expanded="false" aria-label="rozwin nawigacje"> <!-- data-bs-toggle="collapse" - rozwijanie sie menu, data-bs-target="#mainmenu" - element o id=mainmenu ma się rozwijać, atrybuty aria wykorzystywane do ułatwiania dostępu do stron dla osób z niepełnosprawnościami-->
+                        <span class="navbar-toggler-icon"></span> <!-- element span przechowujący ikonkę rozwijanego menu w wersji mobilnej -->
+                    </button>  
+                    <div class="collapse navbar-collapse col-12 col-sm-12 col-md-8" id="mainmenu"> <!-- element menu który ma się rozwijać w widoku moblinym -->
+                        <ul class="navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Główna</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="submenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Usługi</a>
+                                <ul class="dropdown-menu" aria-labelledby="submenu">
+                                    <li><a class="dropdown-item align-right" href="czyszczenie.html">Czyszczenie oczka</a></li>
+                                    <li><a class="dropdown-item align-right" href="budowa.html">Budowa oczek</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sklep.html">Sklep</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="galeria.html">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <div class="row container-fluid ml-1 mr-1 mt-3 mb-3">
+            <aside class="col-md-2 ms-3 me-3 d-none d-md-block">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sem dolor, sollicitudin 
+                    ut condimentum gravida, rutrum in metus.Quisque vitae blandit ligula. Vivamus mauris 
+                    nulla, faucibus nec sem at, dapibus consectetur ligula. Donec sagittis, orci non 
+                    condimentum imperdiet, dolor purus dictum lacus, id tincidunt nulla tortor mollis ligula.Maecenas
+            </aside>
+            <main class="col-sm-12 col-md-9 p-4 ms-3 me-3">
+                <article>
+                    <section>
+                        <div class="row">
+                            <div class="col-12 text-center" style="font-size: 20px;">
+                                <h2 class="text-center">Galeria</h2>
+                                <p>Nasza galeria jest pełna wspaniałych wizji natury i sztuki wodnej. Przekrocz próg i oddaj
+                                    się wirtualnemu spacerowi po naszych najpiękniejszych projektach. Zanurz się w oczarowujących
+                                    krajobrazach, pełnych kolorowych kwiatów i lśniącej wody. Każde zdjęcie przeniesie Cię w inny
+                                    wymiar, gdzie magia natury łączy się z umiejętnościami naszych projektantów. Odkryj inspiracje
+                                    dla swojego własnego oczka wodnego i przekonaj się, jak niewielkie kawałki natury mogą
+                                    stworzyć raj na Twoim podwórku.</p>
+                            </div>
+                            <div class="picture col-md-6 mt-3 col-lg-6 p-2">
+                                <a href="images/obraz1.jpg" targer="_blank"><img src="images/obraz1.jpg" class="zdjecie img-fluid" alt=""></a>
+                                <div class="text-center col-12 p-2">Bychawa: Idylliczne oczko wodne otoczone malowniczymi polami i drzewami, które zapewniają harmonię i spokój.</div>
+                            </div>
+                            <div class="picture col-md-6 mt-3 col-lg-6 p-2">
+                                <a href="images/obraz2.jpg" targer="_blank"><img src="images/obraz2.jpg" class="zdjecie img-fluid" alt=""></a>
+                                <div class="text-center col-12 p-2">Nałęczów: Magiczne oczko wodne o pełnym blasku, otoczone urokliwymi willami i bujnymi ogrodami.</div>
+                            </div>
+                            <div class="col-12 mt-5 mb-2 text-center" style="font-size: 20px;">
+                                <h2 class="text-center">Nasze projekty</h2>
+                                <p>Nasza firma w sieloletniej historii naszej działalności ukończyła wiele projektów. Oto niektóre z nich.</p>
+                            </div>
+                            <div class="picture col-md-6 mt-3 col-lg-4 p-2">
+                                <a href="images/obraz3.jpg" targer="_blank"><img src="images/obraz3.jpg" class="zdjecie img-fluid" alt=""></a>
+                                <div class="text-center col-12 p-2">Puławy: Eleganckie oczko wodne z imponującym fontannowym widowiskiem, które przyciąga uwagę i dodaje uroku otoczeniu.</div>
+                            </div>
+                            <div class="picture col-md-6 mt-3 col-lg-4 p-2">
+                                <a href="images/obraz5.jpeg" targer="_blank"><img src="images/obraz5.jpeg" class="zdjecie img-fluid" alt=""></a>
+                                <div class="text-center col-12 p-2">Kazimierz Dolny: Urocze oczko wodne w sercu malowniczego miasteczka, gdzie woda tańczy w rytmie historycznej architektury.</div>
+                            </div>
+                            <div class="picture col-md-6 mt-3 col-lg-4 p-2">
+                                <a href="images/obraz6.jpg" targer="_blank"><img src="images/obraz6.jpg" class="zdjecie img-fluid" alt=""></a>
+                                <div class="text-center col-12 p-2">Kraśnik: Harmonijne oczko wodne, które jest kwintesencją spokoju i odprężenia, oferując chwilę ucieczki od codzienności.</div>
+                            </div>
+                            <div class="col-12 mt-5 mb-2 text-center" style="font-size: 20px;">
+                                <h2 class="text-center">Prjekty budowlane</h2>
+                                <p>Nasza firma zajmuje się też tworzeniem prejektów budowlane dla firm trzecich. Oto oczka które zaprojektowali nasi designerzy.</p>
+                            </div>
+                            <div class="picture col-md-6 mt-3 col-lg-3 p-2">
+                                <a href="images/obraz4.jpg" targer="_blank"><img src="images/obraz4.jpg" class="zdjecie img-fluid" alt=""></a>
+                                <div class="text-center col-12 p-2">Dęblin: Oczko wodne pełne energii, gdzie woda błyszczy w słońcu, dodając życia temu urokliwemu zakątkowi.</div>
+                            </div>
+                            <div class="picture col-md-6 mt-3 col-lg-3 p-2">
+                                <a href="images/obraz7.jpg" targer="_blank"><img src="images/obraz7.jpg" class="zdjecie img-fluid" alt=""></a>
+                                <div class="text-center col-12 p-2">Świdnik: Nowoczesne oczko wodne, które stanowi atrakcję w sercu miasta, tworząc miejsce spotkań i relaksu dla lokalnej społeczności.</div>
+                            </div>
+                            <div class="picture col-md-6 mt-3 col-lg-3 p-2">
+                                <a href="images/obraz8.png" targer="_blank"><img src="images/obraz8.png" class="zdjecie img-fluid" alt=""></a>
+                                <div class="text-center col-12 p-2">Poniatowa: Urocze oczko wodne, które emanuje spokojem i zaprasza do zanurzenia się w oazie naturalnego piękna.</div>
+                            </div>
+                            <div class="picture col-md-6 mt-3 col-lg-3 p-2">
+                                <a href="images/obraz9.jpg" targer="_blank"><img src="images/obraz9.jpg" class="zdjecie img-fluid" alt=""></a>
+                                <div class="text-center col-12 p-2">Nałęczów: Romantyczne oczko wodne z mistyczną atmosferą, gdzie woda i światło tworzą magiczne refleksy na powierzchni.</div>
+                            </div>
+                        </div>
+                    </section>
+                
+                    
+                             
+                </article>
+            </main>
+        </div>
+        <div class="row container-fluid p-0 m-0 ">
+            <footer style="font-size: 15px; color: white; text-align: center; padding-top:15px; padding-bottom: 15px;">
+                Jakub Patkowski
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

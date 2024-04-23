@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit = no">
+    <title>GreenPond</title>
+    <meta name="description" content="Oczka wodne">
+    <meta name="keywords" content="oczka wodne,sklep,czyszczenie">
+    <meta name="author" content="Jakub Patkowski">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- BootStrap-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Główny arkusz styli -->
+    <link rel="stylesheet" href="css/sklep.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- JQuery -->
+    
+
+</head>
+<body>
+    <div class="container-fluid p-0"> <!-- fluid -z zajmij cale dostepne miejsce, p-0 - padding 0 -->
+        <header>
+            <nav class="navbar navbar-dark navbar-expand-md col-md-12">  <!-- navbar-expand - rozszerz się od medium , navbar-expand-md - wyświetlaj rozwinięte menu przy szerokościach medium lub wiekszych-->
+                <div class="col-12 col-md-7">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="d-inline-block align-bottom" width="197" height="60" alt=""><h1 class="d-inline-block">Green<p class="d-inline-block" style="color: #00b3df;">Pond</p></h1></a> <!-- d-inline-block align-bottom - wyrównanie do dolnej krawędzi, d-inline-block - wyświetlaj jako blok -->
+                </div>
+                <div class="col-12 col-md-5 ms-auto"> <!-- menu rozwijanego, ms-auto - dodanie marginesów po lewej stronie -->
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="#mainmenu" aria-expanded="false" aria-label="rozwin nawigacje"> <!-- data-bs-toggle="collapse" - rozwijanie sie menu, data-bs-target="#mainmenu" - element o id=mainmenu ma się rozwijać, atrybuty aria wykorzystywane do ułatwiania dostępu do stron dla osób z niepełnosprawnościami-->
+                        <span class="navbar-toggler-icon"></span> <!-- element span przechowujący ikonkę rozwijanego menu w wersji mobilnej -->
+                    </button>  
+                    <div class="collapse navbar-collapse col-12 col-sm-12 col-md-8" id="mainmenu"> <!-- element menu który ma się rozwijać w widoku moblinym -->
+                        <ul class="navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Główna</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="submenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Usługi</a>
+                                <ul class="dropdown-menu" aria-labelledby="submenu">
+                                    <li><a class="dropdown-item align-right" href="czyszczenie.html">Czyszczenie oczka</a></li>
+                                    <li><a class="dropdown-item align-right" href="budowa.html">Budowa oczek</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="sklep.html">Sklep</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <div class="row container-fluid ml-1 mr-1 mt-3 mb-3">
+            <aside class="col-md-2 ms-3 me-3 d-none d-md-block">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sem dolor, sollicitudin 
+                    ut condimentum gravida, rutrum in metus.Quisque vitae blandit ligula. Vivamus mauris 
+                    nulla, faucibus nec sem at, dapibus consectetur ligula. Donec sagittis, orci non 
+                    condimentum imperdiet, dolor purus dictum lacus, id tincidunt nulla tortor mollis ligula.Maecenas
+            </aside>
+            <main class="col-sm-12 col-md-9 p-4 ms-3 me-3">
+                <article>
+                    <!-- Header-->
+                    <header class="sklep py-3 text-center">
+                        <div class="container">
+                            <h3>Nasz sklep</h3>
+                        </div>
+                    </header>
+                    <!-- Section-->
+                    <section class="py-5">
+                        <div class="container px-4 px-lg-5 mt-5">
+                            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="images/sklep/miniaturki/min1.png" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Fontanna ogrodowa</h5>
+                                                <!-- Product price-->
+                                                999.99zł
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><input class="container-fluid" id="ilosc1" type="number" placeholder="ilość"></div>
+                                            <div class="text-center"><button class="btn container-fluid" onclick="zapisz('Fontanna ogrodowa',999.99,1)">Dodaj do koszyka</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Sale badge-->
+                                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="images/sklep/miniaturki/min2.png" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Doniczka ogrodowa</h5>
+                                                
+                                                <!-- Product price-->
+                                                <span class="text-muted text-decoration-line-through">50.00zł</span>
+                                                40.00zł
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><input class="container-fluid" id="ilosc2" type="number" placeholder="ilość"></div>
+                                            <div class="text-center"><button class="btn container-fluid" onclick="zapisz('Doniczka ogrodowa',40.00,2)"">Dodaj do koszyka</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Sale badge-->
+                                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="images/sklep/miniaturki/min3.png" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Lampka LED</h5>
+                                                <!-- Product price-->
+                                                <span class="text-muted text-decoration-line-through">$15.00zł</span>
+                                                10.00zł
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><input class="container-fluid" id="ilosc3" type="number" placeholder="ilość"></div>
+                                            <div class="text-center"><button class="btn container-fluid" onclick="zapisz('Lampka LED',10.00,3)">Dodaj do koszyka</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="images/sklep/miniaturki/min4.png" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Wiszące lampki ogrodowe 10szt.</h5>
+                                                <!-- Product price-->
+                                                150.00zł
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><input class="container-fluid" id="ilosc4" type="number" placeholder="ilość"></div>
+                                            <div class="text-center"><button class="btn container-fluid" onclick="zapisz('Wiszące lampki ogrodowe 10szt',150.00,4)">Dodaj do koszyka</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="images/sklep/miniaturki/min5.png" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Nawóz do roślin</h5>
+                                                <!-- Product price-->
+                                                30.00zł
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><input class="container-fluid" id="ilosc5" type="number" placeholder="ilość"></div>
+                                            <div class="text-center"><button class="btn container-fluid" onclick="zapisz('Nawóz do roślin',30.00,5)"">Dodaj do koszyka</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="images/sklep/miniaturki/min6.png" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Lilie wodne</h5>
+                                                <!-- Product price-->
+                                                50.00zł
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><input class="container-fluid" id="ilosc6" type="number" placeholder="ilość"></div>
+                                            <div class="text-center"><button class="btn container-fluid" onclick="zapisz('Lilie wodne',50.00,6)"">Dodaj do koszyka</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="images/sklep/miniaturki/min7.png" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Pompa fontannowa</h5>
+                                                
+                                                <!-- Product price-->
+                                                1499.00zł
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><input class="container-fluid" id="ilosc7" type="number" placeholder="ilość"></div>
+                                            <div class="text-center"><button class="btn container-fluid" onclick="zapisz('Pompa fontannowa',1499.99,7)">Dodaj do koszyka</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="images/sklep/miniaturki/min8.png" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Nasiona różnych roślin MIX</h5>
+                                                
+                                                <!-- Product price-->
+                                                20.00zł
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><input class="container-fluid" id="ilosc8" type="number" placeholder="ilość"></div>
+                                            <div class="text-center"><button class="btn container-fluid" onclick="zapisz('Nasiona kwiatów MIX',10.00,9)">Dodaj do koszyka</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="px-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="col-12 text-center" id="podsumowanie">
+                                    <button class="koszyk-btn d-inline-block" onclick="wyswietlKoszyk()">Wyświetl koszyk</button>
+                                    <button class="koszyk-btn d-inline-block" onclick="wyczysc()">Wyświetl dane z magazynu</button>
+                                </div>
+                                <div class="col-12 col-md-8 text-center my-3" id="koszyk">
+                                    Twój koszyk jest pusty
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container-fluid" id="platnosc">
+                                <form onsubmit="walidacja(event)">
+                                    <table id="formularz-platnosci">
+                                        <tbody>
+                                        <tr>
+                                            <td>Imię</td>
+                                            <td><input type="text" id="imie" placeholder="Imię"></td>
+                                            <td><div id="imie-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nazwisko</td>
+                                            <td><input type="text" id="nazwisko" placeholder="Nazwisko"  required></td><!--pattern="[a-zA-Z a-zA-Z]+" --> 
+                                            <td><div id="nazwisko-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nr tel</td>
+                                            <td><input type="text" id="nr-tel" placeholder="123456789"  required></td> <!--pattern="[0-9]{9}"--> 
+                                            <td><div id="nr-tel-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td><input type="email" id="email" placeholder="email@email.com"  required></td> <!--pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" --> 
+                                            <td><div id="email-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Miejscowość</td>
+                                            <td><input type="text" id="miejscowosc" placeholder="Lublin"  required></td> <!--pattern="[a-zA-Z a-zA-Z]+" --> 
+                                            <td><div id="miejscowosc-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kod pocztowy</td>
+                                            <td><input type="text" id="kod-pocztowy" placeholder="12-345"  required></td> <!--pattern="[0-9]{2}-[0-9]{3}" --> 
+                                            <td><div id="kod-pocztowy-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ulica</td>
+                                            <td><input type="text" id="ulica" placeholder="Nadbystrzycka"  required></td> <!--pattern="[a-zA-Z a-zA-Z]+" --> 
+                                            <td><div id="ulica-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nr budynku</td>
+                                            <td><input type="text" id="nr-budynku" placeholder="1/23a" required></td> 
+                                            <td><div id="nr-budynku-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Karta</td>
+                                            <td><input type="radio" name="karta" id="visa" value="Visa" title="wybór karty płatniczej" required >Visa  <input type="radio" name="karta" id="master" value="Master Card" title="wybór karty płatniczej" required >Master Card</td>
+                                            <td><div id="karta-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nr karty</td>
+                                            <td><input type="text" id="nr-karty" placeholder="XXXX XXXX XXXX XXXX"  required></td> <!--pattern="[0-9]{16}" --> 
+                                            <td><div id="nr-karty-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data ważności</td>
+                                            <td><input type="text" id="data-waznosci " placeholder="MM/YY"  required></td> <!--pattern="[0-9]{2}/[0-9]{2}" --> 
+                                            <td><div id="data-waznosci-error"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kod CCV</td>
+                                            <td><input type="text" id="kod-ccv" placeholder="CCC"  required></td> <!--pattern="[0-9]{3}" --> 
+                                            <td><div id="kod-ccv-error"></div></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <input type="submit" value="Kup teraz">
+                                </form>
+                            </div>
+                        </div>
+                    </section>                  
+                </article>
+            </main>
+        </div>
+        <div class="row container-fluid p-0 m-0 ">
+            <footer style="font-size: 15px; color: white; text-align: center; padding-top:15px; padding-bottom: 15px;">
+                Jakub Patkowski
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sklep.js"></script>
+</body>
+</html>

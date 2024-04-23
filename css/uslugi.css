@@ -1,0 +1,35 @@
+.list-display li {
+    margin-bottom:18px;
+    font-size:1.1rem;
+    border: solid 4px #0091bd;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    
+}
+
+.list-checkmarks {
+    padding-left:1.5rem;
+    
+}
+
+.list-checkmarks li {
+    list-style-type:none;
+    padding-left:50px;
+    
+}
+
+.list-checkmarks li:before {  
+      
+    font-family: 'FontAwesome';
+    font-size: 40px;
+    content: "\2713";
+    margin:0 10px 0 -28px;
+    color: #7e9931;
+  }
+
+.zarezerwuj {
+    background-color: #7e9931;
+    border: none;
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
